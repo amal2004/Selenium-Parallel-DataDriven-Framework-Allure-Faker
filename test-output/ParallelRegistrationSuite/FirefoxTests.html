@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  FirefoxTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FirefoxTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 27 13:32:43 EDT 2026</td>
+</tr>
+<tr><td>Total time:</td><td>19 seconds (19692 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.amalw.tests.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: com.amalw.tests.RegistrationTest<br>Parameters: User(firstName=John, lastName=Doe, email=testuser_4b393b306f8f41ada7fdd69974e65b6c@mailinator.com, company=ABC), MALE</td>
+<td></td>
+<td>3</td>
+<td>com.amalw.tests.RegistrationTest@53a7a60c</td></tr>
+<tr>
+<td title='com.amalw.tests.RegistrationNegativeTest.testinvalidRegistrationData()'><b>testinvalidRegistrationData</b><br>Test class: com.amalw.tests.RegistrationNegativeTest<br>Parameters: User(firstName=John, lastName=Doe, email=testuser_a9ad861cc3614221a4b0945658194859@mailinator.com, company=ABC), FEMALE, Password must meet the following rules</td>
+<td></td>
+<td>5</td>
+<td>com.amalw.tests.RegistrationNegativeTest@28bdbe88</td></tr>
+<tr>
+<td title='com.amalw.tests.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: com.amalw.tests.RegistrationTest<br>Parameters: User(firstName=John, lastName=Doe, email=testuser_da2a6d059a8d41509d0bd43a7142f7fd@mailinator.com, company=ABC), FEMALE</td>
+<td></td>
+<td>5</td>
+<td>com.amalw.tests.RegistrationTest@53a7a60c</td></tr>
+<tr>
+<td title='com.amalw.tests.RegistrationNegativeTest.testinvalidRegistrationData()'><b>testinvalidRegistrationData</b><br>Test class: com.amalw.tests.RegistrationNegativeTest<br>Parameters: User(firstName=John, lastName=Doe, email=, company=ABC), FEMALE, Email is required</td>
+<td></td>
+<td>2</td>
+<td>com.amalw.tests.RegistrationNegativeTest@28bdbe88</td></tr>
+<tr>
+<td title='com.amalw.tests.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: com.amalw.tests.RegistrationTest<br>Parameters: User(firstName=John, lastName=Doe, email=testuser_592e97d5fa1049399f47299655280d72@mailinator.com, company=ABC), FEMALE</td>
+<td></td>
+<td>5</td>
+<td>com.amalw.tests.RegistrationTest@53a7a60c</td></tr>
+<tr>
+<td title='com.amalw.tests.RegistrationNegativeTest.testinvalidRegistrationData()'><b>testinvalidRegistrationData</b><br>Test class: com.amalw.tests.RegistrationNegativeTest<br>Parameters: User(firstName=John, lastName=Doe, email=invalid-email, company=ABC), MALE, Please enter a valid email address.</td>
+<td></td>
+<td>4</td>
+<td>com.amalw.tests.RegistrationNegativeTest@28bdbe88</td></tr>
+<tr>
+<td title='com.amalw.tests.RegistrationNegativeTest.testinvalidRegistrationData()'><b>testinvalidRegistrationData</b><br>Test class: com.amalw.tests.RegistrationNegativeTest<br>Parameters: User(firstName=John, lastName=Doe, email=testuser_ed431a366f9f42ffbd39c1e7ce960462@mailinator.com, company=ABC), MALE, The password and confirmation password do not match.</td>
+<td></td>
+<td>5</td>
+<td>com.amalw.tests.RegistrationNegativeTest@28bdbe88</td></tr>
+<tr>
+<td title='com.amalw.tests.RegistrationTest.testRegistration()'><b>testRegistration</b><br>Test class: com.amalw.tests.RegistrationTest<br>Parameters: User(firstName=John, lastName=Doe, email=testuser_f886a0e029484c678d20771cea3a5867@mailinator.com, company=ABC), FEMALE</td>
+<td></td>
+<td>9</td>
+<td>com.amalw.tests.RegistrationTest@53a7a60c</td></tr>
+</table><p>
+</body>
+</html>

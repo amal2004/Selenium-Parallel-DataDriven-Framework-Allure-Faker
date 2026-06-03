@@ -1,0 +1,835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-27T13:32:32 EDT" name="ParallelRegistrationSuite" finished-at="2026-05-27T13:33:15 EDT" duration-ms="42535">
+    <groups>
+    </groups>
+    <test started-at="2026-05-27T13:32:32 EDT" name="ChromeTests" finished-at="2026-05-27T13:32:43 EDT" duration-ms="10854">
+      <class name="com.amalw.tests.RegistrationNegativeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:33 EDT" name="setUp" finished-at="2026-05-27T13:32:37 EDT" duration-ms="4131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:33 EDT" name="setUp" finished-at="2026-05-27T13:32:37 EDT" duration-ms="4050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:33 EDT" name="setUp" finished-at="2026-05-27T13:32:37 EDT" duration-ms="3992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:33 EDT" name="setUp" finished-at="2026-05-27T13:32:37 EDT" duration-ms="4232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:37 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:32:42 EDT" duration-ms="5297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Email is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:37 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:32:41 EDT" duration-ms="4432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_cf9706760ccf489b9876d77d895cc5d1@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password must meet the following rules]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:37 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:32:42 EDT" duration-ms="4902" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=invalid-email, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter a valid email address.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:37 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:32:42 EDT" duration-ms="4536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_280314b42d7345268784b6497ddd50af@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[The password and confirmation password do not match.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:41 EDT" name="tearDown" finished-at="2026-05-27T13:32:43 EDT" duration-ms="1790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:42 EDT" name="tearDown" finished-at="2026-05-27T13:32:43 EDT" duration-ms="1333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:42 EDT" name="tearDown" finished-at="2026-05-27T13:32:43 EDT" duration-ms="1426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@7d78f3d5]" started-at="2026-05-27T13:32:42 EDT" name="tearDown" finished-at="2026-05-27T13:32:43 EDT" duration-ms="964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amalw.tests.RegistrationNegativeTest -->
+      <class name="com.amalw.tests.RegistrationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:33 EDT" name="setUp" finished-at="2026-05-27T13:32:37 EDT" duration-ms="4094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:33 EDT" name="setUp" finished-at="2026-05-27T13:32:37 EDT" duration-ms="4073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:33 EDT" name="setUp" finished-at="2026-05-27T13:32:37 EDT" duration-ms="4077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:33 EDT" name="setUp" finished-at="2026-05-27T13:32:37 EDT" duration-ms="4042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:37 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:32:43 EDT" duration-ms="5672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_bd1f31f0757e485884d6d1b9536cf4fb@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:37 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:32:42 EDT" duration-ms="5212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_1a01f8d10d0d4a8fa35208cfa9a87207@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:37 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:32:43 EDT" duration-ms="5626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_539b5fc16fe649e38a946b2dcb93fd42@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:37 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:32:42 EDT" duration-ms="5264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_797d0fdc142446f3b917e20ef34a4704@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:42 EDT" name="tearDown" finished-at="2026-05-27T13:32:43 EDT" duration-ms="1120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:42 EDT" name="tearDown" finished-at="2026-05-27T13:32:43 EDT" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:43 EDT" name="tearDown" finished-at="2026-05-27T13:32:43 EDT" duration-ms="708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@d5af0a5]" started-at="2026-05-27T13:32:43 EDT" name="tearDown" finished-at="2026-05-27T13:32:43 EDT" duration-ms="644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amalw.tests.RegistrationTest -->
+    </test> <!-- ChromeTests -->
+    <test started-at="2026-05-27T13:32:43 EDT" name="FirefoxTests" finished-at="2026-05-27T13:33:03 EDT" duration-ms="19692">
+      <class name="com.amalw.tests.RegistrationNegativeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:43 EDT" name="setUp" finished-at="2026-05-27T13:32:53 EDT" duration-ms="9498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:43 EDT" name="setUp" finished-at="2026-05-27T13:32:55 EDT" duration-ms="12024" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:43 EDT" name="setUp" finished-at="2026-05-27T13:32:47 EDT" duration-ms="3320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:43 EDT" name="setUp" finished-at="2026-05-27T13:32:48 EDT" duration-ms="4544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:47 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:32:52 EDT" duration-ms="5413" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_a9ad861cc3614221a4b0945658194859@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password must meet the following rules]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:48 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:32:53 EDT" duration-ms="5443" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_ed431a366f9f42ffbd39c1e7ce960462@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[The password and confirmation password do not match.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:52 EDT" name="tearDown" finished-at="2026-05-27T13:33:01 EDT" duration-ms="9097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:53 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:32:55 EDT" duration-ms="2403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Email is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:53 EDT" name="tearDown" finished-at="2026-05-27T13:33:01 EDT" duration-ms="7656" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:55 EDT" name="tearDown" finished-at="2026-05-27T13:33:01 EDT" duration-ms="5720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:32:55 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:33:00 EDT" duration-ms="4900" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=invalid-email, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter a valid email address.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@28bdbe88]" started-at="2026-05-27T13:33:00 EDT" name="tearDown" finished-at="2026-05-27T13:33:03 EDT" duration-ms="2332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amalw.tests.RegistrationNegativeTest -->
+      <class name="com.amalw.tests.RegistrationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:32:43 EDT" name="setUp" finished-at="2026-05-27T13:32:51 EDT" duration-ms="7453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:32:43 EDT" name="setUp" finished-at="2026-05-27T13:32:46 EDT" duration-ms="2590" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:32:43 EDT" name="setUp" finished-at="2026-05-27T13:32:54 EDT" duration-ms="10290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:32:43 EDT" name="setUp" finished-at="2026-05-27T13:32:56 EDT" duration-ms="12707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:32:46 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:32:49 EDT" duration-ms="3173" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_4b393b306f8f41ada7fdd69974e65b6c@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:32:49 EDT" name="tearDown" finished-at="2026-05-27T13:33:01 EDT" duration-ms="11807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:32:51 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:33:00 EDT" duration-ms="9161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_f886a0e029484c678d20771cea3a5867@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:32:54 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:32:59 EDT" duration-ms="5422" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_592e97d5fa1049399f47299655280d72@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:32:56 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:33:01 EDT" duration-ms="5050" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_da2a6d059a8d41509d0bd43a7142f7fd@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:32:59 EDT" name="tearDown" finished-at="2026-05-27T13:33:01 EDT" duration-ms="2145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:33:00 EDT" name="tearDown" finished-at="2026-05-27T13:33:03 EDT" duration-ms="2589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@53a7a60c]" started-at="2026-05-27T13:33:01 EDT" name="tearDown" finished-at="2026-05-27T13:33:03 EDT" duration-ms="1908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amalw.tests.RegistrationTest -->
+    </test> <!-- FirefoxTests -->
+    <test started-at="2026-05-27T13:33:03 EDT" name="EdgeTests" finished-at="2026-05-27T13:33:15 EDT" duration-ms="11949">
+      <class name="com.amalw.tests.RegistrationNegativeTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:03 EDT" name="setUp" finished-at="2026-05-27T13:33:07 EDT" duration-ms="3983" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:03 EDT" name="setUp" finished-at="2026-05-27T13:33:07 EDT" duration-ms="3953" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:03 EDT" name="setUp" finished-at="2026-05-27T13:33:07 EDT" duration-ms="3972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:03 EDT" name="setUp" finished-at="2026-05-27T13:33:06 EDT" duration-ms="3349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:06 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:33:12 EDT" duration-ms="5949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_71a71cde61594e66a338e7f476deaeb9@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password must meet the following rules]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:07 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:33:13 EDT" duration-ms="5924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=invalid-email, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please enter a valid email address.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:07 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:33:13 EDT" duration-ms="6069" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_e416fa5e09c5435f84b98ede0cf6f0f2@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[The password and confirmation password do not match.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method signature="testinvalidRegistrationData(com.amalw.model.User,com.amalw.enums.Gender,java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:07 EDT" name="testinvalidRegistrationData" data-provider="invalidRegistrationData" finished-at="2026-05-27T13:33:13 EDT" duration-ms="5461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Email is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testinvalidRegistrationData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:12 EDT" name="tearDown" finished-at="2026-05-27T13:33:15 EDT" duration-ms="2577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:13 EDT" name="tearDown" finished-at="2026-05-27T13:33:15 EDT" duration-ms="2494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:13 EDT" name="tearDown" finished-at="2026-05-27T13:33:15 EDT" duration-ms="2058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationNegativeTest@600f5704]" started-at="2026-05-27T13:33:13 EDT" name="tearDown" finished-at="2026-05-27T13:33:15 EDT" duration-ms="1825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amalw.tests.RegistrationNegativeTest -->
+      <class name="com.amalw.tests.RegistrationTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:32:32 EDT" name="beforeSuite" finished-at="2026-05-27T13:32:32 EDT" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:03 EDT" name="setUp" finished-at="2026-05-27T13:33:06 EDT" duration-ms="3412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:03 EDT" name="setUp" finished-at="2026-05-27T13:33:07 EDT" duration-ms="3521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:03 EDT" name="setUp" finished-at="2026-05-27T13:33:07 EDT" duration-ms="3951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:03 EDT" name="setUp" finished-at="2026-05-27T13:33:07 EDT" duration-ms="3958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:06 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:33:13 EDT" duration-ms="6997" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_573b35ce34914af090133b1378f9716d@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:07 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:33:14 EDT" duration-ms="6972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_feb13fc32e1943c59e2e9417a7ddbee8@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FEMALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:07 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:33:13 EDT" duration-ms="5838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_28f8cb31e2cf4c9891b24bf2d1a36530@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method signature="testRegistration(com.amalw.model.User,com.amalw.enums.Gender)[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:07 EDT" name="testRegistration" data-provider="registrationData" finished-at="2026-05-27T13:33:14 EDT" duration-ms="6526" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[User(firstName=John, lastName=Doe, email=testuser_d438a8cabca840e3ab8e14c6336d2277@mailinator.com, company=ABC)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MALE]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:13 EDT" name="tearDown" finished-at="2026-05-27T13:33:15 EDT" duration-ms="2118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:13 EDT" name="tearDown" finished-at="2026-05-27T13:33:15 EDT" duration-ms="1414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:14 EDT" name="tearDown" finished-at="2026-05-27T13:33:15 EDT" duration-ms="1337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.amalw.tests.RegistrationTest@ef60710]" started-at="2026-05-27T13:33:14 EDT" name="tearDown" finished-at="2026-05-27T13:33:15 EDT" duration-ms="1421" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amalw.tests.RegistrationTest -->
+    </test> <!-- EdgeTests -->
+  </suite> <!-- ParallelRegistrationSuite -->
+</testng-results>
