@@ -2,14 +2,16 @@
 
 <div align="center">
 
-![Java](https://img.shields.io/badge/Java-17-orange)
-![Selenium](https://img.shields.io/badge/Selenium-4.x-green)
-![TestNG](https://img.shields.io/badge/TestNG-7.x-red)
-![Allure](https://img.shields.io/badge/Allure-Reporting-blue)
-![Maven](https://img.shields.io/badge/Maven-Build-blue)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge\&logo=openjdk)
+![Selenium](https://img.shields.io/badge/Selenium-4.x-green?style=for-the-badge\&logo=selenium)
+![TestNG](https://img.shields.io/badge/TestNG-7.x-red?style=for-the-badge)
+![Allure](https://img.shields.io/badge/Allure-Reporting-blue?style=for-the-badge)
+![Maven](https://img.shields.io/badge/Maven-Build-blue?style=for-the-badge\&logo=apachemaven)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-Enterprise-grade Selenium automation framework built for scalable, maintainable, and thread-safe UI testing.
+## ✨ Enterprise-Grade Selenium Automation Framework ✨
+
+Scalable • Thread-Safe • Parallel • Maintainable • CI/CD Ready
 
 </div>
 
@@ -17,39 +19,43 @@ Enterprise-grade Selenium automation framework built for scalable, maintainable,
 
 # 📌 Overview
 
-This framework is designed using modern automation architecture principles and supports:
+A modern Selenium automation framework built using enterprise automation best practices and clean architecture principles.
 
-- ⚡ Parallel Cross-Browser Execution
-- 🧵 Thread-Safe WebDriver Management
-- 🧱 Page Object Model (POM)
-- 📊 Allure Reporting Integration
-- 📸 Automatic Screenshot Capture
-- 🪵 Centralized Structured Logging
-- ⚙️ Dynamic Configuration Management
-- 🔥 Headless Browser Execution
-- 🧪 Data-Driven Testing with TestNG
-- 🏗️ Enterprise-Level Framework Design
+The framework is designed for:
 
-The framework is optimized for enterprise-scale automation projects and CI/CD integration.
+* ⚡ Parallel Cross-Browser Execution
+* 🧵 Thread-Safe WebDriver Management
+* 🧱 Page Object Model (POM)
+* 📊 Allure Reporting Integration
+* 📸 Automatic Screenshot Capture
+* 🪵 Structured Logging with MDC
+* ⚙️ Dynamic Configuration Management
+* 🎲 Dynamic Test Data Generation
+* 🧪 Data-Driven Testing
+* 🔥 Headless Browser Execution
+* 🛡️ Robust Exception Handling
+* 🏗️ Enterprise-Level Scalability
 
 ---
 
-# ✨ Features
+# ✨ Core Features
 
-| Feature | Description |
-|---|---|
-| ✅ Parallel Execution | Execute tests concurrently |
-| ✅ Thread-Safe Drivers | Uses `ThreadLocal<WebDriver>` |
-| ✅ Multi-Browser Support | Chrome, Firefox, Edge |
-| ✅ POM Architecture | Clean page abstraction |
-| ✅ Allure Reporting | Rich test reporting |
-| ✅ Screenshot Capture | Automatic failure screenshots |
-| ✅ Dynamic Configuration | Runtime config override support |
-| ✅ Structured Logging | SLF4J + Logback |
-| ✅ Data-Driven Testing | TestNG `@DataProvider` |
-| ✅ Headless Execution | CI/CD friendly |
-| ✅ Custom Exceptions | Centralized framework handling |
-| ✅ Enterprise Ready | Scalable clean architecture |
+| Feature                   | Description                    |
+| ------------------------- | ------------------------------ |
+| ✅ Parallel Execution      | Execute tests concurrently     |
+| ✅ Thread-Safe Drivers     | Uses `ThreadLocal<WebDriver>`  |
+| ✅ Multi-Browser Support   | Chrome, Firefox, Edge          |
+| ✅ Dynamic Faker Test Data | Realistic randomized test data |
+| ✅ POM Architecture        | Clean page abstraction         |
+| ✅ Allure Reporting        | Rich execution reporting       |
+| ✅ Screenshot Capture      | Auto screenshots on failure    |
+| ✅ Structured Logging      | SLF4J + Logback + MDC          |
+| ✅ Runtime Config Override | JVM system property support    |
+| ✅ Data-Driven Testing     | Parallel TestNG DataProviders  |
+| ✅ Headless Execution      | CI/CD optimized execution      |
+| ✅ Custom Exceptions       | Centralized error handling     |
+| ✅ Builder Pattern         | Immutable test data objects    |
+| ✅ Enterprise Ready        | Clean scalable architecture    |
 
 ---
 
@@ -62,6 +68,7 @@ src
 │       └── com.amalw
 │           ├── base
 │           ├── config
+│           ├── datagenerator
 │           ├── driver
 │           ├── enums
 │           ├── exceptions
@@ -85,105 +92,182 @@ src
 
 # ⚙️ Tech Stack
 
-| Technology | Purpose |
-|---|---|
-| Java 17 | Programming Language |
-| Selenium WebDriver | Browser Automation |
-| TestNG | Testing Framework |
-| Maven | Dependency Management |
-| WebDriverManager | Driver Management |
-| Allure Reports | Test Reporting |
-| SLF4J | Logging API |
-| Logback | Logging Framework |
+| Technology            | Purpose               |
+| --------------------- | --------------------- |
+| ☕ Java 17             | Programming Language  |
+| 🌐 Selenium WebDriver | Browser Automation    |
+| 🧪 TestNG             | Test Framework        |
+| 📊 Allure Reports     | Reporting             |
+| 📦 Maven              | Dependency Management |
+| 🔧 WebDriverManager   | Driver Management     |
+| 🎲 DataFaker          | Dynamic Test Data     |
+| 🪵 SLF4J              | Logging API           |
+| 📝 Logback            | Logging Framework     |
+| 🧰 Lombok             | Boilerplate Reduction |
 
 ---
 
-# 📦 Maven Dependencies
+# 🎲 Dynamic Test Data Generation
 
-```xml
-<dependencies>
+The framework uses **DataFaker** to generate realistic and randomized test data.
 
-    <!-- Selenium -->
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>4.x.x</version>
-    </dependency>
+## ✨ Features
 
-    <!-- TestNG -->
-    <dependency>
-        <groupId>org.testng</groupId>
-        <artifactId>testng</artifactId>
-        <version>7.x.x</version>
-        <scope>test</scope>
-    </dependency>
+* Random user generation
+* Dynamic email creation
+* Random passwords
+* Random company names
+* Random gender selection
+* Parallel-safe Faker instances
 
-    <!-- WebDriverManager -->
-    <dependency>
-        <groupId>io.github.bonigarcia</groupId>
-        <artifactId>webdrivermanager</artifactId>
-        <version>5.x.x</version>
-    </dependency>
+---
 
-    <!-- Allure -->
-    <dependency>
-        <groupId>io.qameta.allure</groupId>
-        <artifactId>allure-testng</artifactId>
-        <version>2.x.x</version>
-    </dependency>
+## 🧵 Thread-Safe Faker Implementation
 
-    <!-- Logging -->
-    <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>2.x.x</version>
-    </dependency>
-
-    <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-classic</artifactId>
-        <version>1.x.x</version>
-    </dependency>
-
-</dependencies>
+```java
+private static final ThreadLocal<Faker> FAKER =
+    ThreadLocal.withInitial(() ->
+        new Faker(new Locale("en-US")));
 ```
 
 ---
 
-# 🔧 Configuration
+## 👤 Example User Generation
 
-## `config.properties`
-
-```properties
-base.url=http://localhost:5000
-browser=firefox
-pageLoadTimeout=30
-headless=true
-screenshot.dir=./screenshots
+```java
+User.builder()
+    .firstName(faker.name().firstName())
+    .lastName(faker.name().lastName())
+    .email(EmailUtils.generateUniqueEmail())
+    .company(faker.company().name())
+    .password(password)
+    .confirmPassword(password)
+    .build();
 ```
 
 ---
 
-# 🌐 Supported Browsers
+# 🧪 Test Coverage
+
+The framework includes both positive and negative test scenarios.
+
+## ✅ Positive Test Coverage
+
+### `RegistrationTest`
+
+Covers:
+
+* Successful user registration
+* Parallel execution
+* Cross-browser validation
+* Success message validation
+
+---
+
+## ❌ Negative Test Coverage
+
+### `RegistrationNegativeTest`
+
+Covers:
+
+* Invalid email validation
+* Empty required fields
+* Password mismatch
+* Weak password validation
+* Input validation checks
+
+---
+
+# 🧱 Page Object Model (POM)
+
+The framework follows the Page Object Model design pattern.
+
+## ✨ BasePage Features
+
+* Click handling
+* Typing operations
+* Explicit waits
+* Visibility checks
+* Navigation helpers
+* Robust exception handling
+
+```java
+protected void click(By locator)
+protected void type(By locator, String text)
+protected String getText(By locator)
+```
+
+---
+
+# 🌐 Browser Support
 
 | Browser | Supported |
-|---|---|
-| Chrome | ✅ |
-| Firefox | ✅ |
-| Edge | ✅ |
+| ------- | --------- |
+| Chrome  | ✅         |
+| Firefox | ✅         |
+| Edge    | ✅         |
 
 ---
 
-# 🔥 Parallel Execution
+# 🔥 Headless Execution Support
 
-The framework fully supports:
+Optimized browser configurations for CI/CD pipelines.
 
-- ✅ Method-level parallel execution
-- ✅ Cross-browser execution
-- ✅ Thread-safe WebDriver sessions
-- ✅ Independent browser instances
+## Chrome Headless Optimizations
 
-Implemented using:
+```java
+options.addArguments(
+    "--headless=new",
+    "--window-size=1920,1080",
+    "--disable-gpu",
+    "--no-sandbox",
+    "--disable-dev-shm-usage"
+);
+```
+
+---
+
+# 🔧 Configuration Management
+
+Centralized configuration handling using `ConfigManager`.
+
+## ✨ Features
+
+* Config file loading
+* JVM runtime overrides
+* Default value fallback
+* Boolean & integer parsing
+* Validation handling
+* Structured config logging
+
+---
+
+## 📄 Example Config
+
+```properties
+base.url=https://demo.nopcommerce.com
+browser=chrome
+headless=false
+grid=false
+retries=1
+pageLoadTimeout=60
+registration.test.data.count=5
+screenshot.dir=screenshots
+```
+
+---
+
+## ⚡ Runtime Override Example
+
+```bash
+mvn clean test -Dbrowser=firefox -Dheadless=true
+```
+
+---
+
+# 🧵 Parallel Execution
+
+Fully thread-safe framework architecture using:
 
 ```java
 private static final ThreadLocal<WebDriver> TLDRIVER =
@@ -192,57 +276,170 @@ private static final ThreadLocal<WebDriver> TLDRIVER =
 
 ---
 
-# 🧵 Benefits of ThreadLocal Driver Management
+# ✨ Benefits of ThreadLocal Architecture
 
-- Isolated browser sessions
-- No driver collision between threads
-- Safe parallel execution
-- Faster execution time
-- Better scalability
+* Independent browser sessions
+* No thread collision
+* Safe parallel execution
+* Faster execution
+* Better scalability
+* CI/CD friendly execution
 
 ---
 
 # 🧪 TestNG Parallel Configuration
 
-## `testng.xml`
-
 ```xml
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-
-<suite name="ParallelRegistrationSuite"
+<suite name="ParallelSuite"
        parallel="methods"
        thread-count="12">
+```
 
-    <listeners>
-        <listener class-name=
-            "com.amalw.listeners.AllureListener"/>
-    </listeners>
+---
 
-    <test name="ChromeTests">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name=
-                "com.amalw.tests.RegistrationTest"/>
-        </classes>
-    </test>
+# 📊 Allure Reporting
 
-    <test name="FirefoxTests">
-        <parameter name="browser" value="firefox"/>
-        <classes>
-            <class name=
-                "com.amalw.tests.RegistrationTest"/>
-        </classes>
-    </test>
+Generate execution results:
 
-    <test name="EdgeTests">
-        <parameter name="browser" value="edge"/>
-        <classes>
-            <class name=
-                "com.amalw.tests.RegistrationTest"/>
-        </classes>
-    </test>
+```bash
+mvn clean test
+```
 
-</suite>
+Serve report:
+
+```bash
+allure serve allure-results
+```
+
+Generate static report:
+
+```bash
+allure generate allure-results --clean -o allure-report
+```
+
+---
+
+# 📄 Allure Features
+
+* ✅ Step-level execution tracking
+* ✅ Failure screenshots
+* ✅ Severity tracking
+* ✅ Epic / Feature / Story grouping
+* ✅ Execution timeline
+* ✅ Parallel execution visibility
+* ✅ Stack trace analysis
+
+---
+
+# 📸 Screenshot Capture
+
+Screenshots are automatically captured on failures.
+
+## 📁 Screenshot Structure
+
+```text
+screenshots/
+├── RegistrationTest/
+└── RegistrationNegativeTest/
+```
+
+---
+
+# 🪵 Logging System
+
+The framework uses:
+
+* SLF4J
+* Logback
+* MDC Context Logging
+
+---
+
+# ✨ Logging Features
+
+* Console logging
+* Rolling file logging
+* Browser tracking
+* Thread identification
+* Execution timing
+* Structured log formatting
+
+---
+
+# 📁 Log Storage
+
+```text
+logs/
+├── automation.log
+└── archived/
+```
+
+---
+
+# 🛡️ Exception Handling
+
+Centralized exception handling using:
+
+```java
+FrameworkException
+```
+
+---
+
+# ✅ Benefits
+
+* Cleaner stack traces
+* Easier debugging
+* Better maintainability
+* Standardized failures
+* Improved reporting clarity
+
+---
+
+# 🧩 Core Framework Components
+
+| Component             | Responsibility                 |
+| --------------------- | ------------------------------ |
+| `ConfigManager`       | Configuration handling         |
+| `ConfigPrinter`       | Execution config logging       |
+| `DriverFactory`       | Thread-safe driver lifecycle   |
+| `BrowserManager`      | Browser creation               |
+| `FakeDataGenerator`   | Faker instance management      |
+| `BasePage`            | Common Selenium actions        |
+| `RegisterPage`        | Registration page interactions |
+| `UserTestDataFactory` | Dynamic user generation        |
+| `ScreenshotManager`   | Screenshot utility             |
+| `BaseTest`            | Test setup & teardown          |
+| `AllureListener`      | Reporting & screenshots        |
+
+---
+
+# 🧱 Design Patterns Used
+
+| Pattern                | Usage                  |
+| ---------------------- | ---------------------- |
+| Page Object Model      | Page abstraction       |
+| Factory Pattern        | Driver & data creation |
+| Builder Pattern        | Immutable user objects |
+| Singleton-Style Config | Shared configuration   |
+| ThreadLocal Pattern    | Parallel execution     |
+| Fluent Interface       | Page method chaining   |
+| Utility Pattern        | Reusable helpers       |
+
+---
+
+# 🧪 Sample Test Flow
+
+```text
+1. Initialize Driver
+2. Open Registration Page
+3. Generate Dynamic User
+4. Fill Registration Form
+5. Submit Registration
+6. Validate Results
+7. Capture Screenshot on Failure
+8. Generate Allure Report
+9. Quit Driver
 ```
 
 ---
@@ -257,7 +454,7 @@ mvn clean test
 
 ---
 
-## ⚡ Run in Headless Mode
+## ⚡ Run Headless
 
 ```bash
 mvn clean test -Dheadless=true
@@ -287,213 +484,31 @@ mvn clean test -Dbrowser=edge
 
 ---
 
-# 📊 Allure Reporting
-
-Generate Allure results:
-
-```bash
-mvn clean test
-```
-
-Serve Allure report:
-
-```bash
-allure serve allure-results
-```
-
-Generate static Allure report:
-
-```bash
-allure generate allure-results --clean -o allure-report
-```
-
----
-
-# 📄 Allure Report Features
-
-- ✅ Test Execution Timeline
-- ✅ Step-Level Reporting
-- ✅ Failure Screenshots
-- ✅ Severity Tracking
-- ✅ Epic / Feature / Story Grouping
-- ✅ Parallel Execution Visibility
-- ✅ Stack Trace Analysis
-
----
-
-# 📸 Screenshot Capture
-
-Screenshots are automatically captured on test failures.
-
-## Screenshot Structure
-
-```text
-screenshots/
-└── RegistrationTest/
-    └── testRegistration_20260518_223001.png
-```
-
----
-
-# 🪵 Logging System
-
-The framework uses:
-
-- SLF4J
-- Logback
-- MDC Thread Context Logging
-
----
-
-# 📄 Logging Features
-
-- Console Logging
-- Rolling File Logging
-- Browser Tracking
-- Thread Identification
-- Daily Log Rotation
-- Execution Context Logging
-
----
-
-# 📁 Log Storage
-
-```text
-logs/
-├── automation.log
-└── archived/
-```
-
----
-
-# 🧩 Core Framework Components
-
-| Component | Responsibility |
-|---|---|
-| `ConfigManager` | Configuration handling |
-| `ConfigPrinter` | Execution configuration logging |
-| `DriverFactory` | Thread-safe driver lifecycle |
-| `BrowserManager` | Browser creation |
-| `BasePage` | Common Selenium actions |
-| `RegisterPage` | Registration page interactions |
-| `UserFactory` | Test user generation |
-| `ScreenshotManager` | Screenshot utility |
-| `BaseTest` | Test setup & teardown |
-| `AllureListener` | Reporting & screenshots |
-
----
-
-# 🧱 Design Patterns Used
-
-| Pattern | Usage |
-|---|---|
-| Page Object Model | Page abstraction |
-| Factory Pattern | Driver & user creation |
-| Singleton Pattern | Shared configuration |
-| ThreadLocal Pattern | Parallel execution |
-| Builder-Style Chaining | Fluent page actions |
-| Utility Pattern | Reusable utilities |
-
----
-
-# 🧪 Sample Test Flow
-
-```text
-1. Initialize Driver
-2. Open Registration Page
-3. Fill Registration Form
-4. Submit Registration
-5. Validate Success Message
-6. Capture Screenshot on Failure
-7. Generate Allure Report
-8. Quit Driver
-```
-
----
-
-# 🧪 Sample Test Scenario
-
-```java
-@Test(dataProvider = "registrationData")
-public void testRegistration(User user, Gender gender) {
-
-    RegisterPage registerPage = new RegisterPage();
-
-    registerPage
-            .open()
-            .selectGender(gender)
-            .fillForm(user)
-            .submit();
-
-    Assert.assertTrue(
-            registerPage.isRegistrationSuccessful());
-
-    String confirmationMessage =
-            registerPage.getConfirmationMessage();
-
-    Assert.assertTrue(
-            confirmationMessage.contains(
-                    "registration completed"));
-}
-```
-
----
-
-# 🧠 Data-Driven Testing
-
-The framework supports parallel data-driven execution using TestNG `@DataProvider`.
-
-```java
-@DataProvider(name = "registrationData", parallel = true)
-public Object[][] getRegistrationData() {
-    return new Object[][] {
-        {
-            UserFactory.buildUser(
-                "John",
-                "Doe",
-                "ABC",
-                "Pass123!",
-                "Pass123!"
-            ),
-            Gender.MALE
-        }
-    };
-}
-```
-
----
-
-# 🛡️ Error Handling
-
-Centralized exception handling is implemented using:
-
-```java
-FrameworkException
-```
-
----
-
-# ✅ Benefits of Custom Exceptions
-
-- Cleaner stack traces
-- Better debugging
-- Improved maintainability
-- Consistent failure reporting
-- Easier root-cause analysis
-
----
-
 # 📌 Enterprise-Level Capabilities
 
-- Centralized configuration
-- Dynamic runtime execution
-- Parallel scalability
-- Structured logging
-- Failure screenshot support
-- Clean modular architecture
-- CI/CD ready execution
-- Reusable page components
-- Extensible framework structure
+* Centralized configuration
+* Dynamic runtime execution
+* Parallel scalability
+* Structured logging
+* Failure screenshot support
+* CI/CD ready execution
+* Clean modular architecture
+* Reusable page components
+* Extensible framework structure
+* Realistic test data generation
+
+---
+
+# 🔮 Future Enhancements
+
+* 🔄 Retry Analyzer
+* ☁ Selenium Grid Integration
+* 🐳 Docker Support
+* ⚙ Jenkins Pipeline
+* 📱 Mobile Automation
+* 📡 API Testing Integration
+* ☁ Cloud Execution Support
+* 📈 Advanced Reporting Dashboard
 
 ---
 
@@ -501,10 +516,20 @@ FrameworkException
 
 ## Amal W
 
-QA Automation Engineer
-
 ---
 
 # ⭐ Support
 
-If you found this framework useful, consider giving the repository a ⭐ on GitHub.
+If you found this framework useful:
+
+* ⭐ Star the repository
+* 🍴 Fork the project
+* 🛠 Contribute improvements
+
+---
+
+<div align="center">
+
+## 💙 Happy Testing 💙
+
+</div>
