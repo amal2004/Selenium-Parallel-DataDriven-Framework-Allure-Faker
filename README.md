@@ -1,4 +1,4 @@
-# 🚀 Selenium Parallel Automation Framework
+# 🚀 Selenium Parallel Data Driven Automation Framework with Faker
 
 <div align="center">
 
